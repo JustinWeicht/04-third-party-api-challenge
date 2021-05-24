@@ -1,4 +1,4 @@
-# Deployed Application: 
+# Deployed Application
 https://justinweicht.github.io/05-third-party-api-challenge/
 
 # 05 Third-Party APIs: Work Day Scheduler
