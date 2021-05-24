@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
+  <!-- header section -->
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -19,92 +19,64 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
-    <!-- time blocks -->
-    <div class="row" id="9am-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 9am-hour">
-          9am
+    <!-- time blocks section -->
+    <div class="container">
+      <div id="hour9" class="row time-block">
+        <div class="col-md-1 hour">9AM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="9am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="10am-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 10am-hour">
-          10am
+      <div id="hour10" class="row time-block">
+        <div class="col-md-1 hour">10AM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="10am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="11am-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 11am-hour">
-          11am
+      <div id="hour11" class="row time-block">
+        <div class="col-md-1 hour">11AM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="11am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="12pm-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 12pm-hour">
-          12pm
+      <div id="hour12" class="row time-block">
+        <div class="col-md-1 hour">12PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="12pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="1pm-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 1pm-hour">
-          1pm
+     <div id="hour13" class="row time-block">
+        <div class="col-md-1 hour">1PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="1pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="2pm-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 2pm-hour">
-          2pm
+      <div id="hour14" class="row time-block">
+        <div class="col-md-1 hour">2PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="2pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="3pm-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 3pm-row">
-          3pm
+      <div id="hour15" class="row time-block">
+       <div class="col-md-1 hour">3PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="3pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="4pm-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 4pm-row">
-          4pm
+      <div id="hour16" class="row time-block">
+        <div class="col-md-1 hour">4PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="4pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
-    <div class="row" id="5pm-row">
-      <div class="col-1"></div>
-      <div class="col-1 col-xs-1 hour" id="time-block 5pm-row">
-          5pm
+      <div id="hour17" class="row time-block">
+        <div class="col-md-1 hour">5PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <textarea id="5pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-lock-locked"></span></button>
-    </div>
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- bootstrap script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
   </body>
