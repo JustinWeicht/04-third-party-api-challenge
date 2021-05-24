@@ -8,6 +8,8 @@ $(document).ready(function () {
         // set the variables to the user's input
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
+        
+        console.log(time, text);
 
         // save the variables in localStorage
         localStorage.setItem(time, text);
@@ -24,6 +26,7 @@ $(document).ready(function () {
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
    
+    // function to compare the current time to the block time slots and change class accordingly
     function auditHours() {
         // set the currentTime variable to the current time
         var currentTime = moment().hour();
@@ -47,7 +50,6 @@ $(document).ready(function () {
                 $(this).removeClass("present");
                 $(this).removeClass("past");
                 $(this).addClass("future");
-
             }
         });
     };
